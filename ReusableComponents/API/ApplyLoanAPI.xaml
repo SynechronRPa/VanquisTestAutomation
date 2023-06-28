@@ -1,0 +1,328 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="LoanAPI" this:LoanAPI.ClientId="732caef2d7cd44fda1bd7a47dc603c43" this:LoanAPI.APIUrl="https://test.pfg-gateway.co.uk/brokers/uat/api/v3/brokers/applications" this:LoanAPI.ClientSecret="A7bA6bB2442246Ed8BE10b58769bBA14" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:utat="clr-namespace:UiPath.Testing.Activities.TestData;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="ClientId" Type="InArgument(x:String)" />
+    <x:Property Name="APIUrl" Type="InArgument(x:String)" />
+    <x:Property Name="ClientSecret" Type="InArgument(x:String)" />
+    <x:Property Name="CampaignID" Type="InArgument(x:String)" />
+    <x:Property Name="LoanPurpose" Type="InArgument(x:String)" />
+    <x:Property Name="AmountRequested" Type="InArgument(x:String)" />
+    <x:Property Name="TermRequested" Type="InArgument(x:String)" />
+    <x:Property Name="ProductRequested" Type="InArgument(x:String)" />
+    <x:Property Name="Brand" Type="InArgument(x:String)" />
+    <x:Property Name="Title" Type="InArgument(x:String)" />
+    <x:Property Name="Forename" Type="InArgument(x:String)" />
+    <x:Property Name="Surname" Type="InArgument(x:String)" />
+    <x:Property Name="DateOfBirth" Type="InArgument(x:String)" />
+    <x:Property Name="Gender" Type="InArgument(x:String)" />
+    <x:Property Name="MaritalStatus" Type="InArgument(x:String)" />
+    <x:Property Name="ResidentialStatus" Type="InArgument(x:String)" />
+    <x:Property Name="EmploymentStatus" Type="InArgument(x:String)" />
+    <x:Property Name="NumberOfDependents" Type="InArgument(x:String)" />
+    <x:Property Name="MobilePhoneNumber" Type="InArgument(x:String)" />
+    <x:Property Name="EmailAddress" Type="InArgument(x:String)" />
+    <x:Property Name="PrecountryCode" Type="InArgument(x:String)" />
+    <x:Property Name="PreCountry" Type="InArgument(x:String)" />
+    <x:Property Name="PrePostalCode" Type="InArgument(x:String)" />
+    <x:Property Name="PrePostTown" Type="InArgument(x:String)" />
+    <x:Property Name="PreHouseNumber" Type="InArgument(x:String)" />
+    <x:Property Name="PreStreetAddress" Type="InArgument(x:String)" />
+    <x:Property Name="PreHouseName" Type="InArgument(x:String)" />
+    <x:Property Name="PreStartDate" Type="InArgument(x:String)" />
+    <x:Property Name="PreEndDate" Type="InArgument(x:String)" />
+    <x:Property Name="CountryCode" Type="InArgument(x:String)" />
+    <x:Property Name="County" Type="InArgument(x:String)" />
+    <x:Property Name="PostalCode" Type="InArgument(x:String)" />
+    <x:Property Name="PostTown" Type="InArgument(x:String)" />
+    <x:Property Name="HouseNumber" Type="InArgument(x:String)" />
+    <x:Property Name="StreetAddress" Type="InArgument(x:String)" />
+    <x:Property Name="StartDate" Type="InArgument(x:String)" />
+    <x:Property Name="AccountNumber" Type="InArgument(x:String)" />
+    <x:Property Name="SortCode" Type="InArgument(x:String)" />
+    <x:Property Name="AccountName" Type="InArgument(x:String)" />
+    <x:Property Name="AccountOpenedDate" Type="InArgument(x:String)" />
+    <x:Property Name="EmployerName" Type="InArgument(x:String)" />
+    <x:Property Name="Occupation" Type="InArgument(x:String)" />
+    <x:Property Name="Industry" Type="InArgument(x:String)" />
+    <x:Property Name="EmpStartDate" Type="InArgument(x:String)" />
+    <x:Property Name="EmpEndDate" Type="InArgument(x:String)" />
+    <x:Property Name="DeclaredNetMonthlyIncome" Type="InArgument(x:String)" />
+    <x:Property Name="TotalMonthlyHousingCosts" Type="InArgument(x:String)" />
+    <x:Property Name="TotalMonthlyOtherOutgoings" Type="InArgument(x:String)" />
+    <x:Property Name="TotalCreditCommitments" Type="InArgument(x:String)" />
+    <x:Property Name="Country" Type="InArgument(x:String)" />
+    <x:Property Name="ApplicationReferenceNumber" Type="OutArgument(x:String)" />
+    <x:Property Name="BrokerEApiURL" Type="OutArgument(x:String)" />
+    <x:Property Name="Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>648,1967</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>TestAPI_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Testing.Activities.TestData</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ApplyLoanAPI" sap:VirtualizedContainerService.HintSize="658,1862" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="APIRequest" />
+      <Variable x:TypeArguments="x:Int32" Name="StatusCode" />
+      <Variable x:TypeArguments="x:String" Name="APIResponse" />
+      <Variable x:TypeArguments="x:Decimal" Name="GenerateRefNumber" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try API Request" sap:VirtualizedContainerService.HintSize="596,1751" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="API Request" sap:VirtualizedContainerService.HintSize="558,1523" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="njl:JObject" Name="LoanAPIResponseJson" />
+            <Variable x:TypeArguments="x:String" Name="CorrelationId" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadTextFile File="{x:Null}" Content="[APIRequest]" DisplayName="Read Apply Loan API_Request" FileName="APIPayLoad\ApplyLoanAPIRequest.xml" sap:VirtualizedContainerService.HintSize="496,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ReadTextFile>
+          <Sequence DisplayName="Assign API test data" sap:VirtualizedContainerService.HintSize="496,876" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <utat:GivenName DisplayName="Given Name" GivenNameResult="[Forename]" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="GivenName_1" />
+            <utat:LastName DisplayName="Last Name" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="LastName_1" LastNameResult="[Surname]" />
+            <utat:RandomNumber Decimals="{x:Null}" DisplayName="Random Number" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="RandomNumber_1" Max="1000000000000" Min="10000000000" Output="[GenerateRefNumber]" />
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[ApplicationReferenceNumber]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[GenerateRefNumber.ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[CorrelationId]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">["1232abddfd"+ApplicationReferenceNumber]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[APIRequest]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[APIRequest.Replace("$campaignID$",CampaignID).Replace("$applicationReference$",ApplicationReferenceNumber).Replace("$loanPurpose$",LoanPurpose).Replace("$amountRequested$",AmountRequested).Replace("$termRequested$",TermRequested).Replace("$productRequested$",ProductRequested).Replace("$brand$",Brand).Replace("$title$",Title).Replace("$forename$",Forename).Replace("$surname$",Surname).Replace("$dateOfBirth$",DateOfBirth).Replace("$gender$",Gender).Replace("$maritalStatus$",MaritalStatus).Replace("$residentialStatus$",ResidentialStatus).Replace("$employmentStatus$",EmploymentStatus).Replace("$numberOfDependents$",NumberOfDependents).Replace("$mobilePhoneNumber$",MobilePhoneNumber).Replace("$emailAddress$",EmailAddress)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[APIRequest]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[APIRequest.Replace("$precountryCode$",PrecountryCode).Replace("$preCountry$",PreCountry).Replace("$prePostalCode$",PrePostalCode).Replace("$prePostTown$",PrePostTown).Replace("$preHouseNumber$",PreHouseNumber).Replace("$preStreetAddress$",PreStreetAddress).Replace("$preHouseName$",PreHouseName).Replace("$preStartDate$",PreStartDate).Replace("$preEndDate$",PreEndDate).Replace("$countryCode$",CountryCode).Replace("$county$",Country).Replace("$postalCode$",PostalCode).Replace("$postTown$",PostTown).Replace("$houseNumber$",HouseNumber).Replace("$streetAddress$",StreetAddress).Replace("$startDate$",StartDate)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[APIRequest]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[APIRequest.Replace("$accountNumber$",AccountNumber).Replace("$sortCode$",SortCode).Replace("$accountName$",AccountName).Replace("$accountOpenedDate$",AccountOpenedDate).Replace("$employerName$",EmployerName).Replace("$occupation$",Occupation).Replace("$industry$",Industry).Replace("$empStartDate$",EmpStartDate).Replace("$empEndDate$",EmpEndDate).Replace("$declaredNetMonthlyIncome$",DeclaredNetMonthlyIncome).Replace("$totalMonthlyHousingCosts$",TotalMonthlyHousingCosts).Replace("$totalMonthlyOtherOutgoings$",TotalMonthlyOtherOutgoings).Replace("$totalCreditCommitments$",TotalCreditCommitments)]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[APIRequest]" BodyFormat="application/json" DisplayName="Apply Loan API Request" EnableSSLVerification="True" EndPoint="[APIUrl]" sap:VirtualizedContainerService.HintSize="496,70" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[APIResponse]" StatusCode="[StatusCode]" TimeoutMS="60000">
+            <ui:HttpClient.Attachments>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.Attachments>
+            <ui:HttpClient.Cookies>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.Cookies>
+            <ui:HttpClient.Headers>
+              <InArgument x:TypeArguments="x:String" x:Key="x-correlation-id">[CorrelationId]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="client_id">[ClientId]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="client_secret">[ClientSecret]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="Accept">*/*</InArgument>
+            </ui:HttpClient.Headers>
+            <ui:HttpClient.Parameters>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.Parameters>
+            <ui:HttpClient.UrlSegments>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+            </ui:HttpClient.UrlSegments>
+          </ui:HttpClient>
+          <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="496,52" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[LoanAPIResponseJson]" JsonString="[APIResponse]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:DeserializeJson>
+          <Assign sap:VirtualizedContainerService.HintSize="496,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[BrokerEApiURL]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[LoanAPIResponseJson.SelectToken("decision").SelectToken("URL").ToString]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <If Condition="[StatusCode = 200]" DisplayName="If - Is valid Response" sap:VirtualizedContainerService.HintSize="496,52" sap2010:WorkflowViewState.IdRef="If_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Then>
+              <Sequence sap:VirtualizedContainerService.HintSize="596,305" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Response Status Code: &quot;+StatusCode.ToString+Environment.NewLine+&quot;Application Reference Number: &quot;+ApplicationReferenceNumber+Environment.NewLine+&#xA;&quot;Broker EApi URL: &quot;+BrokerEApiURL]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <uta:VerifyExpression KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="[&quot;Response Status Code: &quot;+StatusCode.ToString+Environment.NewLine+&quot;Application Reference Number: &quot;+ApplicationReferenceNumber+Environment.NewLine+&#xA;&quot;Broker EApi URL: &quot;+BrokerEApiURL]" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[StatusCode = 200]" sap:VirtualizedContainerService.HintSize="534,62" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence sap:VirtualizedContainerService.HintSize="596,305" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Status Code: &quot;+StatusCode.ToString+&quot;API Response&quot; + APIResponse]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <uta:VerifyExpression KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="[&quot;Status Code: &quot;+StatusCode.ToString+&quot;API Response&quot; + APIResponse]" ContinueOnFailure="False" DisplayName="Verify Expression" Expression="[StatusCode = 200]" sap:VirtualizedContainerService.HintSize="534,62" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="562,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Rethrow DisplayName="Rethrow - API Exception" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

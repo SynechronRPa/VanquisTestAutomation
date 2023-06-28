@@ -1,0 +1,390 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TC02_ApplyLoanAPI" this:TC02_ApplyLoanAPI.LoanAmount="1500" this:TC02_ApplyLoanAPI.Months="24" this:TC02_ApplyLoanAPI.FirstName="Auto" this:TC02_ApplyLoanAPI.LastName="Test" this:TC02_ApplyLoanAPI.DOB="1999-01-01" this:TC02_ApplyLoanAPI.MobileNo="07700900000" this:TC02_ApplyLoanAPI.Street="Main" this:TC02_ApplyLoanAPI.Town="York" this:TC02_ApplyLoanAPI.PostCode="BD1 1RG" this:TC02_ApplyLoanAPI.LivingSituation="Homeowner" this:TC02_ApplyLoanAPI.MaritialStatus="Single" this:TC02_ApplyLoanAPI.AdultsLiving="0" this:TC02_ApplyLoanAPI.EmployementDetails="Full-time" this:TC02_ApplyLoanAPI.MonthlyIncome="10000" this:TC02_ApplyLoanAPI.MonthlyHousingCost="600.50" this:TC02_ApplyLoanAPI.MonthlyOutgoingCost="800" this:TC02_ApplyLoanAPI.CreditCommitments="600" this:TC02_ApplyLoanAPI.NameOnBank="Vanquis Bank" this:TC02_ApplyLoanAPI.PreStreet="Godwin Street" this:TC02_ApplyLoanAPI.PreTown="York" this:TC02_ApplyLoanAPI.PrePostCode="LS28 9NU" this:TC02_ApplyLoanAPI.APIEmailId="john@smithtest.com" this:TC02_ApplyLoanAPI.ExpPreApplicationStatus="Pre-application" this:TC02_ApplyLoanAPI.ExpApplicationStatus="In Progress" this:TC02_ApplyLoanAPI.Sl_No="1" this:TC02_ApplyLoanAPI.CampaignID="017831-id" this:TC02_ApplyLoanAPI.LoanPurpose="Holiday" this:TC02_ApplyLoanAPI.productRequested="Personal Loan" this:TC02_ApplyLoanAPI.Title="Mr" this:TC02_ApplyLoanAPI.Gender="Male" this:TC02_ApplyLoanAPI.EmailID="manigsmca11@gmail.com" this:TC02_ApplyLoanAPI.EmailPassword="tpypgkjlrnvufuvr" this:TC02_ApplyLoanAPI.HouseNumber="1087" this:TC02_ApplyLoanAPI.BuildingNumber="Test" this:TC02_ApplyLoanAPI.StartDate="2000-01-02" this:TC02_ApplyLoanAPI.CountryCode="GBR" this:TC02_ApplyLoanAPI.Country="West Yorkshire" this:TC02_ApplyLoanAPI.Rent="100" this:TC02_ApplyLoanAPI.MonthlyPayment="1st" this:TC02_ApplyLoanAPI.AccountName="Current" this:TC02_ApplyLoanAPI.SortCode="070116" this:TC02_ApplyLoanAPI.AccountNumber="00003036" this:TC02_ApplyLoanAPI.accountOpenedDate="2012-01-01" this:TC02_ApplyLoanAPI.CardNumber="4444333322221111 " this:TC02_ApplyLoanAPI.CardholderName="AUTHORISED" this:TC02_ApplyLoanAPI.ExpiryDate="0724" this:TC02_ApplyLoanAPI.SecurityCode="121" this:TC02_ApplyLoanAPI.Signature="Vanq" this:TC02_ApplyLoanAPI.Pin="123456" this:TC02_ApplyLoanAPI.MemorableWord="Vanq" this:TC02_ApplyLoanAPI.ExpStatus="Accept" this:TC02_ApplyLoanAPI.ExpDecisioncode="A_IF999" this:TC02_ApplyLoanAPI.EmployerName="Intraco" this:TC02_ApplyLoanAPI.Occupation="Management" this:TC02_ApplyLoanAPI.Industry="Health" this:TC02_ApplyLoanAPI.EmpStartDate="2015-10-01" this:TC02_ApplyLoanAPI.EmpEndDate="2021-10-01" this:TC02_ApplyLoanAPI.PreHouseNumber="1" this:TC02_ApplyLoanAPI.PreStartDate="1999-01-01" this:TC02_ApplyLoanAPI.PreCountryCode="GBR" this:TC02_ApplyLoanAPI.PreCountry="Yorkshire" this:TC02_ApplyLoanAPI.PreEndDate="2000-01-01" this:TC02_ApplyLoanAPI.PreHouseName="Palace" this:TC02_ApplyLoanAPI.ExpapplicationStatusSigned="Closed" this:TC02_ApplyLoanAPI.ExpapplicationSubStatusSigned="Cloned – email address changed" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="LoanAmount" Type="InArgument(x:String)" />
+    <x:Property Name="Months" Type="InArgument(x:String)" />
+    <x:Property Name="FirstName" Type="InArgument(x:String)" />
+    <x:Property Name="LastName" Type="InArgument(x:String)" />
+    <x:Property Name="DOB" Type="InArgument(x:String)" />
+    <x:Property Name="MobileNo" Type="InArgument(x:String)" />
+    <x:Property Name="Street" Type="InArgument(x:String)" />
+    <x:Property Name="Town" Type="InArgument(x:String)" />
+    <x:Property Name="PostCode" Type="InArgument(x:String)" />
+    <x:Property Name="LivingSituation" Type="InArgument(x:String)" />
+    <x:Property Name="MaritialStatus" Type="InArgument(x:String)" />
+    <x:Property Name="AdultsLiving" Type="InArgument(x:String)" />
+    <x:Property Name="EmployementDetails" Type="InArgument(x:String)" />
+    <x:Property Name="MonthlyIncome" Type="InArgument(x:String)" />
+    <x:Property Name="MonthlyHousingCost" Type="InArgument(x:String)" />
+    <x:Property Name="MonthlyOutgoingCost" Type="InArgument(x:String)" />
+    <x:Property Name="CreditCommitments" Type="InArgument(x:String)" />
+    <x:Property Name="NameOnBank" Type="InArgument(x:String)" />
+    <x:Property Name="PreStreet" Type="InArgument(x:String)" />
+    <x:Property Name="PreTown" Type="InArgument(x:String)" />
+    <x:Property Name="PrePostCode" Type="InArgument(x:String)" />
+    <x:Property Name="APIEmailId" Type="InArgument(x:String)" />
+    <x:Property Name="ExpPreApplicationStatus" Type="InArgument(x:String)" />
+    <x:Property Name="ExpApplicationStatus" Type="InArgument(x:String)" />
+    <x:Property Name="Sl_No" Type="InArgument(x:String)" />
+    <x:Property Name="CampaignID" Type="InArgument(x:String)" />
+    <x:Property Name="LoanPurpose" Type="InArgument(x:String)" />
+    <x:Property Name="productRequested" Type="InArgument(x:String)" />
+    <x:Property Name="Title" Type="InArgument(x:String)" />
+    <x:Property Name="Gender" Type="InArgument(x:String)" />
+    <x:Property Name="EmailID" Type="InArgument(x:String)" />
+    <x:Property Name="EmailPassword" Type="InArgument(x:String)" />
+    <x:Property Name="HouseNumber" Type="InArgument(x:String)" />
+    <x:Property Name="BuildingNumber" Type="InArgument(x:String)" />
+    <x:Property Name="StartDate" Type="InArgument(x:String)" />
+    <x:Property Name="CountryCode" Type="InArgument(x:String)" />
+    <x:Property Name="Country" Type="InArgument(x:String)" />
+    <x:Property Name="Rent" Type="InArgument(x:String)" />
+    <x:Property Name="MonthlyPayment" Type="InArgument(x:String)" />
+    <x:Property Name="AccountName" Type="InArgument(x:String)" />
+    <x:Property Name="SortCode" Type="InArgument(x:String)" />
+    <x:Property Name="AccountNumber" Type="InArgument(x:String)" />
+    <x:Property Name="accountOpenedDate" Type="InArgument(x:String)" />
+    <x:Property Name="CardNumber" Type="InArgument(x:String)" />
+    <x:Property Name="CardholderName" Type="InArgument(x:String)" />
+    <x:Property Name="ExpiryDate" Type="InArgument(x:String)" />
+    <x:Property Name="SecurityCode" Type="InArgument(x:String)" />
+    <x:Property Name="Signature" Type="InArgument(x:String)" />
+    <x:Property Name="Pin" Type="InArgument(x:String)" />
+    <x:Property Name="MemorableWord" Type="InArgument(x:String)" />
+    <x:Property Name="ExpStatus" Type="InArgument(x:String)" />
+    <x:Property Name="ExpDecisioncode" Type="InArgument(x:String)" />
+    <x:Property Name="EmployerName" Type="InArgument(x:String)" />
+    <x:Property Name="Occupation" Type="InArgument(x:String)" />
+    <x:Property Name="Industry" Type="InArgument(x:String)" />
+    <x:Property Name="EmpStartDate" Type="InArgument(x:String)" />
+    <x:Property Name="EmpEndDate" Type="InArgument(x:String)" />
+    <x:Property Name="PreHouseNumber" Type="InArgument(x:String)" />
+    <x:Property Name="PreStartDate" Type="InArgument(x:String)" />
+    <x:Property Name="PreCountryCode" Type="InArgument(x:String)" />
+    <x:Property Name="PreCountry" Type="InArgument(x:String)" />
+    <x:Property Name="PreEndDate" Type="InArgument(x:String)" />
+    <x:Property Name="PreHouseName" Type="InArgument(x:String)" />
+    <x:Property Name="ExpapplicationStatusSigned" Type="InArgument(x:String)" />
+    <x:Property Name="ExpapplicationSubStatusSigned" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>597,795</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>TC02_ApplyLoanAPI_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TC02_ApplyLoanAPI" sap:VirtualizedContainerService.HintSize="512,730" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
+      <Variable x:TypeArguments="x:String" Name="ApplicationReferenceNumber" />
+      <Variable x:TypeArguments="x:String" Name="BrokerEApiURL" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,377" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Config\Config.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Config\Config.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[Config]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Apply Loan API - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ReusableComponents\API\ApplyLoanAPI.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ClientId">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;ClientId&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="APIUrl">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;VanquisGatewayAPIUrl&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ClientSecret">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;ClientSecret&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="CampaignID">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CampaignID" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="LoanPurpose">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanPurpose" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="AmountRequested">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanAmount" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="TermRequested">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Months" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ProductRequested">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="productRequested" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Brand">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="NameOnBank" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Title">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Title" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Forename">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="FirstName" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Surname">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LastName" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="DateOfBirth">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="DOB" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Gender">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Gender" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="MaritalStatus">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="MaritialStatus" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ResidentialStatus">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LivingSituation" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmploymentStatus">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmployementDetails" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="NumberOfDependents">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="AdultsLiving" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="MobilePhoneNumber">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="MobileNo" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmailAddress">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="APIEmailId" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PrecountryCode">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreCountryCode" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PreCountry">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreCountry" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PrePostalCode">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PrePostCode" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PrePostTown">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreTown" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PreHouseNumber">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreHouseNumber" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PreStreetAddress">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreStreet" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PreHouseName">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreHouseName" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PreStartDate">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreStartDate" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PreEndDate">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreEndDate" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="CountryCode">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CountryCode" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="County">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Country" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PostalCode">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PostCode" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PostTown">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Town" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="HouseNumber">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="HouseNumber" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="StreetAddress">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Street" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="StartDate">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="StartDate" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="AccountNumber">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="AccountNumber" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="SortCode">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="SortCode" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="AccountName">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="AccountName" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="AccountOpenedDate">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="accountOpenedDate" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmployerName">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmployerName" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Occupation">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Occupation" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Industry">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Industry" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmpStartDate">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmpStartDate" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmpEndDate">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmpEndDate" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="DeclaredNetMonthlyIncome">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="MonthlyIncome" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="TotalMonthlyHousingCosts">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="MonthlyHousingCost" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="TotalMonthlyOtherOutgoings">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="MonthlyOutgoingCost" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="TotalCreditCommitments">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CreditCommitments" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Country">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Country" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="ApplicationReferenceNumber">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ApplicationReferenceNumber" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="BrokerEApiURL">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="BrokerEApiURL" />
+          </OutArgument>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">
+            <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="Config" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login to salesfore - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="ReusableComponents\Salesforce\LoginToSalesforce.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="SalesforceURL">[Config("SalesforceUrl").ToString]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="SalesforcePWD">[Config("SalesforcePassword").ToString]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="SalesforceUserID">[Config("SalesforceUsername").ToString]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Salesforce API - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="ReusableComponents\Salesforce\SalesforceAPI.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpApplicationStatus">[ExpPreApplicationStatus]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ApplicationRef">[ApplicationReferenceNumber]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpMonthlyAccomodation">["GBP "+MonthlyHousingCost]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Apply loan through EAPI Url - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\ApplyLoanThroughEApiUrl.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="BrokerEApiUrl">[BrokerEApiURL]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmailId">[EmailID]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="MobileNumber">[MobileNo]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmailPassword">[EmailPassword]</InArgument>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">[Config]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Salesforce cloned loan application - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ReusableComponents\Salesforce\SalesforceClonedLoanApplication.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ApplicationRef">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ApplicationReferenceNumber" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpApplicationStatus">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpApplicationStatus" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationStatusSigned">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpapplicationStatusSigned" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationSubStatusSigned">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpapplicationSubStatusSigned" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+  </Sequence>
+</Activity>

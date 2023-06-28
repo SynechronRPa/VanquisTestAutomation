@@ -1,0 +1,12 @@
+{
+  "dataVariationFileInfo": [
+    {
+      "filePath": ".variations\\TC01_VanquisLoan_Sheet1.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\TC02_VanquisLoanAPI_Sheet1.json",
+      "dataVariationType": "File"
+    }
+  ]
+}

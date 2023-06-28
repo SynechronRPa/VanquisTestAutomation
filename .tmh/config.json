@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/synechzkmwol/VanquisBankPOC/testmanager_",
+  "defaultProject": {
+    "id": "8f719162-601f-0000-0d0e-0b45745c006e",
+    "name": "Vanquis_TestAutomation",
+    "key": "AZU"
+  }
+}

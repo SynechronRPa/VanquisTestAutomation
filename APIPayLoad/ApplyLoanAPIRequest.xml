@@ -1,0 +1,92 @@
+{
+  "introducerReferenceBlock": {
+    "introducerReference": "EverythingFinancial",
+    "subAffiliate": "giant",
+    "applicationReference": "$applicationReference$"
+  },
+  "campaigns": [
+    {
+      "campaignID": "$campaignID$"
+    }
+  ],
+  "application": {
+    "consents": {
+      "consentedToCreditSearch": true,
+      "consentedToDataSharing": true
+    },
+    "product": {
+      "loanPurpose": "$loanPurpose$",
+      "amountRequested": $amountRequested$,
+      "termRequested": $termRequested$,
+      "productRequested": "$productRequested$"
+    },
+    "brand": "$brand$"
+  },
+  "applicant": {
+    "names": {
+      "title": "$title$",
+      "forename": "$forename$",
+      "middleName": "API",
+      "surname": "$surname$"
+    },
+    "dateOfBirth": "$dateOfBirth$",
+    "gender": "$gender$",
+    "maritalStatus": "$maritalStatus$",
+    "residentialStatus": "$residentialStatus$",
+    "employmentStatus": "$employmentStatus$",
+    "numberOfDependents": $numberOfDependents$,
+    "preferedContactMechanism": "Email",
+    "contactInfo": {
+      "homePhoneNumber": "$mobilePhoneNumber$",
+      "mobilePhoneNumber": "$mobilePhoneNumber$",
+      "workPhoneNumber": "$mobilePhoneNumber$",
+      "alternativePhoneNumber": "$mobilePhoneNumber$",
+      "emailAddress": "$emailAddress$"
+    },
+    "address": [
+      {
+        "addressType": "Previous",
+        "countryCode": "$precountryCode$",
+        "county": "$preCountry$",
+        "postalCode": "$prePostalCode$",
+        "postTown": "$prePostTown$",
+        "houseNumber": "$preHouseNumber$",
+        "streetAddress": "$preStreetAddress$",
+        "houseName": "$preHouseName$",
+        "startDate": "$preStartDate$",
+        "endDate": "$preEndDate$"
+      },
+      {
+        "addressType": "Current",
+        "countryCode": "$countryCode$",
+        "county": "$county$",
+        "postalCode": "$postalCode$",
+        "postTown": "$postTown$",
+        "houseNumber": "$houseNumber$",
+        "streetAddress": "$streetAddress$",
+        "startDate": "$startDate$"
+      }
+    ],
+    "bankDetails": {
+      "accountNumber": "$accountNumber$",
+      "sortCode": "$sortCode$",
+      "accountName": "$accountName$",
+      "accountOpenedDate": "$accountOpenedDate$"
+    },
+    "employment": [
+      {
+        "employerName": "$employerName$",
+        "occupation": "$occupation$",
+        "industry": "$industry$",
+        "startDate": "$empStartDate$",
+        "endDate": "$empEndDate$"
+      }
+    ],
+    "incomeAndExpenses": {
+      "declaredNetMonthlyIncome": $declaredNetMonthlyIncome$,
+      "totalMonthlyHousingCosts": $totalMonthlyHousingCosts$,
+      "totalMonthlyOtherOutgoings": $totalMonthlyOtherOutgoings$,
+      "totalCreditCommitments": $totalCreditCommitments$
+    }
+  }
+}

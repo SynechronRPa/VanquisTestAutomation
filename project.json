@@ -1,0 +1,72 @@
+{
+  "name": "Vanquis_TestAutomation",
+  "description": "Vanquis bank test automation POC",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "2.20.2",
+    "UiPath.Mail.Activities": "1.20.2",
+    "UiPath.OCR.Activities": "3.15.1",
+    "UiPath.System.Activities": "23.4.3",
+    "UiPath.Testing.Activities": "23.4.1",
+    "UiPath.UIAutomation.Activities": "23.4.7",
+    "UiPath.WebAPI.Activities": "[1.16.2]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.4.2.0",
+  "projectVersion": "1.0.4",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ee11e230-d277-4695-a7ee-1500ee2a9b42",
+        "dataVariationFilePath": ".variations\\TC01_VanquisLoan_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC01_ApplyLoan.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "66e60b35-b656-4e63-b25a-f9178ca8948e",
+        "dataVariationFilePath": ".variations\\TC02_VanquisLoanAPI_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC02_ApplyLoanAPI.xaml"
+      }
+    ],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}

@@ -1,0 +1,379 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TC01_ApplyLoan" this:TC01_ApplyLoan.Sl_No="1" this:TC01_ApplyLoan.Months="12 months" this:TC01_ApplyLoan.LoanPurpose="Car/Vehicle" this:TC01_ApplyLoan.Title="Mr" this:TC01_ApplyLoan.FirstName="Test" this:TC01_ApplyLoan.LastName="Test" this:TC01_ApplyLoan.DOB="02091990" this:TC01_ApplyLoan.EmailID="manigsmca11@gmail.com" this:TC01_ApplyLoan.MobileNo="07700900000" this:TC01_ApplyLoan.HouseNumber="1087" this:TC01_ApplyLoan.BuildingNumber="Test" this:TC01_ApplyLoan.Street="Main" this:TC01_ApplyLoan.Town="York" this:TC01_ApplyLoan.PostCode="BD1 1RG" this:TC01_ApplyLoan.MoveIn="022020" this:TC01_ApplyLoan.LivingSituation="Home Owner" this:TC01_ApplyLoan.Rent="100" this:TC01_ApplyLoan.MaritialStatus="Single" this:TC01_ApplyLoan.AdultsLiving="0" this:TC01_ApplyLoan.EmployementDetails="Full-Time" this:TC01_ApplyLoan.MonthlyIncome="10000" this:TC01_ApplyLoan.MonthlyPayment="1st" this:TC01_ApplyLoan.NameOnBank="Vanq Tester" this:TC01_ApplyLoan.SortCode="070116" this:TC01_ApplyLoan.AccountNumber="00003036" this:TC01_ApplyLoan.CardNumber="4444333322221111 " this:TC01_ApplyLoan.CardholderName="AUTHORISED" this:TC01_ApplyLoan.ExpiryDate="0724" this:TC01_ApplyLoan.SecurityCode="121" this:TC01_ApplyLoan.Signature="Vanq" this:TC01_ApplyLoan.Pin="123456" this:TC01_ApplyLoan.MemorableWord="Vanq" this:TC01_ApplyLoan.LoanAmount="1700" this:TC01_ApplyLoan.ExpStatus="Accept" this:TC01_ApplyLoan.ExpDecisioncode="A_IF999" this:TC01_ApplyLoan.ApplicationName="John Smith" this:TC01_ApplyLoan.ExpapplicationStatus="Pending Disbursement" this:TC01_ApplyLoan.ExpapplicationSubStatus="Awaiting Signature" this:TC01_ApplyLoan.ExpcutomerProgress="27.2 Loan Signing" this:TC01_ApplyLoan.ExpapprovalStage="Edit Approval Stage" this:TC01_ApplyLoan.ExpapplicationStatusSigned="Loan Created" this:TC01_ApplyLoan.ExpapplicationSubStatusSigned="Closed" this:TC01_ApplyLoan.EmailPassword="tpypgkjlrnvufuvr" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Sl_No" Type="InArgument(x:String)" />
+    <x:Property Name="Months" Type="InArgument(x:String)" />
+    <x:Property Name="LoanPurpose" Type="InArgument(x:String)" />
+    <x:Property Name="Title" Type="InArgument(x:String)" />
+    <x:Property Name="FirstName" Type="InArgument(x:String)" />
+    <x:Property Name="LastName" Type="InArgument(x:String)" />
+    <x:Property Name="DOB" Type="InArgument(x:String)" />
+    <x:Property Name="EmailID" Type="InArgument(x:String)" />
+    <x:Property Name="MobileNo" Type="InArgument(x:String)" />
+    <x:Property Name="HouseNumber" Type="InArgument(x:String)" />
+    <x:Property Name="BuildingNumber" Type="InArgument(x:String)" />
+    <x:Property Name="Street" Type="InArgument(x:String)" />
+    <x:Property Name="Town" Type="InArgument(x:String)" />
+    <x:Property Name="PostCode" Type="InArgument(x:String)" />
+    <x:Property Name="MoveIn" Type="InArgument(x:String)" />
+    <x:Property Name="LivingSituation" Type="InArgument(x:String)" />
+    <x:Property Name="Rent" Type="InArgument(x:String)" />
+    <x:Property Name="MaritialStatus" Type="InArgument(x:String)" />
+    <x:Property Name="AdultsLiving" Type="InArgument(x:String)" />
+    <x:Property Name="EmployementDetails" Type="InArgument(x:String)" />
+    <x:Property Name="MonthlyIncome" Type="InArgument(x:String)" />
+    <x:Property Name="MonthlyPayment" Type="InArgument(x:String)" />
+    <x:Property Name="NameOnBank" Type="InArgument(x:String)" />
+    <x:Property Name="SortCode" Type="InArgument(x:String)" />
+    <x:Property Name="AccountNumber" Type="InArgument(x:String)" />
+    <x:Property Name="CardNumber" Type="InArgument(x:String)" />
+    <x:Property Name="CardholderName" Type="InArgument(x:String)" />
+    <x:Property Name="ExpiryDate" Type="InArgument(x:String)" />
+    <x:Property Name="SecurityCode" Type="InArgument(x:String)" />
+    <x:Property Name="Signature" Type="InArgument(x:String)" />
+    <x:Property Name="Pin" Type="InArgument(x:String)" />
+    <x:Property Name="MemorableWord" Type="InArgument(x:String)" />
+    <x:Property Name="LoanAmount" Type="InArgument(x:String)" />
+    <x:Property Name="ExpStatus" Type="InArgument(x:String)" />
+    <x:Property Name="ExpDecisioncode" Type="InArgument(x:String)" />
+    <x:Property Name="ApplicationName" Type="InArgument(x:String)" />
+    <x:Property Name="ExpapplicationStatus" Type="InArgument(x:String)" />
+    <x:Property Name="ExpapplicationSubStatus" Type="InArgument(x:String)" />
+    <x:Property Name="ExpcutomerProgress" Type="InArgument(x:String)" />
+    <x:Property Name="ExpapprovalStage" Type="InArgument(x:String)" />
+    <x:Property Name="ExpapplicationStatusSigned" Type="InArgument(x:String)" />
+    <x:Property Name="ExpapplicationSubStatusSigned" Type="InArgument(x:String)" />
+    <x:Property Name="EmailPassword" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>597,1246</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>TC01_ApplyLoan_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Enums</x:String>
+      <x:String>UiPath.Testing.Activities.TestData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TC01_ApplyLoan" sap:VirtualizedContainerService.HintSize="512,901" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="Idx" />
+      <Variable x:TypeArguments="x:String" Name="ScreenAmount" />
+      <Variable x:TypeArguments="x:Double" Name="count" />
+      <Variable x:TypeArguments="x:String" Name="CustomerRefNumber" />
+      <Variable x:TypeArguments="x:String" Name="TotalCreditAmount" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Read Configuation - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Config\Config.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[Config]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="LoanDetails.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\LoanDetails.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">[Config]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="LoanAmount">[LoanAmount]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Months">[Months]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="LoanPurpose">[LoanPurpose]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ChangeURL.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\ChangeURL.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Demographic.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\Demographic.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="DOB">[DOB]</InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="FirstName">[FirstName]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="LastName">[LastName]</OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Title">[Title]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmailID">[EmailID]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="MobileNo">[MobileNo]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="HouseNumber">[HouseNumber]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="BuildingNumber">[BuildingNumber]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Street">[Street]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Town">[Town]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PostCode">[PostCode]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="MoveIn">[MoveIn]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="LivingSituation">[LivingSituation]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Rent">[Rent]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmployementDetails">[EmployementDetails]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="MonthlyIncome">[MonthlyIncome]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="MaritalStatus">[MaritialStatus]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="AdultsLiving">[AdultsLiving]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="TempValue" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EmailConfirmationAndOTP.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\EmailConfirmationAndOTP.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">
+            <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="Config" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmailId">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmailID" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmailPassword">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmailPassword" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ConfirmLoanOffer.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\ConfirmLoanOffer.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PaymentDayConfirm.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\PaymentDayConfirm.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="PaymentDate">[MonthlyPayment]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="BankDetails.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\BankDetails.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="SortCode">[SortCode]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="AccountNumber">[AccountNumber]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PaymentCardDetails.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\PaymentCardDetails.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="CardNumber">[CardNumber]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="CardholderName">[CardholderName]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpiryDate">[ExpiryDate]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="SecurityCode">[SecurityCode]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="LoanSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\LoanSummary.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login to salesfore - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="ReusableComponents\Salesforce\LoginToSalesforce.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="SalesforceURL">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;SalesforceUrl&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="SalesforcePWD">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;SalesforcePassword&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="SalesforceUserID">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;SalesforceUsername&quot;).ToString" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Salesforce - verify the loan application - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="ReusableComponents\Salesforce\VerifyTheLoanApplication.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpStatus">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpStatus" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpDecisioncode">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpDecisioncode" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ApplicationName">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="FirstName.Trim+&quot; &quot;+LastName.Trim" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="BorrowingAmount">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="TotalCreditAmount" />
+          </OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationStatus">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpapplicationStatus" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationSubStatus">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpapplicationSubStatus" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpcutomerProgress">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpcutomerProgress" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpapprovalStage">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpapprovalStage" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="CustomerReference">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="CustomerRefNumber" />
+          </OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... And" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_28">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReviewAndSignDocuments.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\ReviewAndSignDocuments.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="CustomerReferenceNumber">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CustomerRefNumber" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="TotalAmount">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TotalCreditAmount" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Signature">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Signature" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="PIN">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Pin" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="MemorableWord">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="MemorableWord" />
+          </InArgument>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">
+            <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="Config" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmailId">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmailID" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmailPassword">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmailPassword" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,224" sap2010:WorkflowViewState.IdRef="Sequence_29">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Salesforce - verify the  loan application-after eSign - Invoke " sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="ReusableComponents\Salesforce\VerifyTheLoanApplication-after eSign.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationSubStatusSigned">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpapplicationSubStatusSigned" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationStatusSigned">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpapplicationStatusSigned" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+  </Sequence>
+</Activity>
