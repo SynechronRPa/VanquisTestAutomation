@@ -11,6 +11,21 @@ pool:
   vmImage: windows-latest
 
 steps:
+- task: UiPathPack@3
+  inputs:
+    versionType: 'ManualVersion'
+    version: 1.0.$(Build.BuildNumber)
+    projectJsonPath: '$(Build.SourcesDirectory)'
+    outputType: 'Tests'
+    orchestratorConnection: 'Azure_UIPath'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+    traceLevel: 'Information'
+
+- task: UiPathDeploy@3
+  inputs:
+    orchestratorConnection: 'Azure_UIPath'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'VanquisTestAutomation_POC'
 
 - task: UiPathTest@3
   inputs:
