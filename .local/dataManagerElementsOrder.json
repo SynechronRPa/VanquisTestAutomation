@@ -1,0 +1,624 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCase1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Config/Config.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ConfigFileLocation&Sequence_2",
+        "Assets&Sequence_6",
+        "AssetValue&Sequence_11",
+        "Username&Sequence_13",
+        "Password&Sequence_13"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCases/TC01_ApplyLoan.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "Idx&Sequence_1",
+        "ScreenAmount&Sequence_1",
+        "count&Sequence_1",
+        "CustomerRefNumber&Sequence_1",
+        "TotalCreditAmount&Sequence_1",
+        "TempValue&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Sl_No",
+        "Months",
+        "LoanPurpose",
+        "Title",
+        "FirstName",
+        "LastName",
+        "DOB",
+        "EmailID",
+        "MobileNo",
+        "HouseNumber",
+        "BuildingNumber",
+        "Street",
+        "Town",
+        "PostCode",
+        "MoveIn",
+        "LivingSituation",
+        "Rent",
+        "MaritialStatus",
+        "AdultsLiving",
+        "EmployementDetails",
+        "MonthlyIncome",
+        "MonthlyPayment",
+        "NameOnBank",
+        "SortCode",
+        "AccountNumber",
+        "CardNumber",
+        "CardholderName",
+        "ExpiryDate",
+        "SecurityCode",
+        "Signature",
+        "Pin",
+        "MemorableWord",
+        "LoanAmount",
+        "ExpStatus",
+        "ExpDecisioncode",
+        "ApplicationName",
+        "ExpapplicationStatus",
+        "ExpapplicationSubStatus",
+        "ExpcutomerProgress",
+        "ExpapprovalStage",
+        "ExpapplicationStatusSigned",
+        "ExpapplicationSubStatusSigned",
+        "EmailPassword"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCases/TC02_ApplyLoanAPI.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BrokerEApiURL&Sequence_1",
+        "ApplicationReferenceNumber&Sequence_1",
+        "Config&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "CountryCode",
+        "Country",
+        "Rent",
+        "MonthlyPayment",
+        "AccountName",
+        "SortCode",
+        "AccountNumber",
+        "accountOpenedDate",
+        "CardNumber",
+        "CardholderName",
+        "ExpiryDate",
+        "SecurityCode",
+        "Signature",
+        "Pin",
+        "MemorableWord",
+        "ExpStatus",
+        "ExpDecisioncode",
+        "EmployerName",
+        "Occupation",
+        "Industry",
+        "EmpStartDate",
+        "EmpEndDate",
+        "PreHouseNumber",
+        "PreStartDate",
+        "PreCountryCode",
+        "PreCountry",
+        "PreEndDate",
+        "PreHouseName",
+        "ExpapplicationStatusSigned",
+        "ExpapplicationSubStatusSigned",
+        "StartDate",
+        "BuildingNumber",
+        "HouseNumber",
+        "EmailPassword",
+        "EmailID",
+        "Gender",
+        "Title",
+        "productRequested",
+        "LoanPurpose",
+        "CampaignID",
+        "Sl_No",
+        "ExpApplicationStatus",
+        "ExpPreApplicationStatus",
+        "LoanAmount",
+        "Months",
+        "FirstName",
+        "LastName",
+        "DOB",
+        "MobileNo",
+        "Street",
+        "Town",
+        "PostCode",
+        "LivingSituation",
+        "MaritialStatus",
+        "AdultsLiving",
+        "EmployementDetails",
+        "MonthlyIncome",
+        "MonthlyHousingCost",
+        "MonthlyOutgoingCost",
+        "CreditCommitments",
+        "NameOnBank",
+        "PreStreet",
+        "PreTown",
+        "PrePostCode",
+        "APIEmailId"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/VanquisLoanApplication/ReviewAndSignDocuments.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TotalCreditAmount&Sequence_1",
+        "CustomerRefNumber&Sequence_1",
+        "AgreementReceived&Sequence_3",
+        "EmailSubject&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "EmailPassword",
+        "CustomerReferenceNumber",
+        "TotalAmount",
+        "Signature",
+        "PIN",
+        "MemorableWord",
+        "Config",
+        "EmailId"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/Email/AgreementCopyOfEmail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MailMessages&TryCatch_1",
+        "count&TryCatch_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "AgreementReceived",
+        "EmailSubject",
+        "EmailPassword",
+        "EmailAddress",
+        "MailServer",
+        "Port"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/Email/GetOTPFromEmail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MailMessages&Sequence_1",
+        "OTPReceived&Sequence_1",
+        "count&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "OTP",
+        "EmailPassword",
+        "EmailAddress",
+        "MailServer",
+        "Port"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/VanquisLoanApplication/LoanDetails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Idx&Sequence_3",
+        "ScreenAmount&Sequence_3",
+        "count&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "LoanPurpose",
+        "Months",
+        "LoanAmount",
+        "Config"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/VanquisLoanApplication/Demographic.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "EmailCount&Sequence_5",
+        "TempValue&Sequence_1",
+        "URL&Sequence_1",
+        "OTP&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "AdultsLiving",
+        "MaritalStatus",
+        "MonthlyIncome",
+        "EmployementDetails",
+        "Rent",
+        "LivingSituation",
+        "MoveIn",
+        "PostCode",
+        "Town",
+        "Street",
+        "BuildingNumber",
+        "HouseNumber",
+        "MobileNo",
+        "EmailID",
+        "Title",
+        "LastName",
+        "FirstName",
+        "DOB"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/VanquisLoanApplication/EmailConfirmationAndOTP.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "OTP&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "EmailPassword",
+        "EmailId",
+        "Config"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/VanquisLoanApplication/ConfirmLoanOffer.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/VanquisLoanApplication/PaymentDayConfirm.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "PaymentDate"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/VanquisLoanApplication/BankDetails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "AccountNumber",
+        "SortCode"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/VanquisLoanApplication/PaymentCardDetails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "SecurityCode",
+        "ExpiryDate",
+        "CardholderName",
+        "CardNumber"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/VanquisLoanApplication/LoanSummary.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "Sl_No",
+        "Months",
+        "LoanPurpose",
+        "Title",
+        "FirstName",
+        "LastName",
+        "DOB",
+        "EmailID",
+        "MobileNo",
+        "HouseNumber",
+        "BuildingNumber",
+        "Street",
+        "Town",
+        "PostCode",
+        "MoveIn",
+        "LivingSituation",
+        "Rent",
+        "MaritialStatus",
+        "AdultsLiving",
+        "EmployementDetails",
+        "MonthlyIncome",
+        "MonthlyPayment",
+        "NameOnBank",
+        "SortCode",
+        "AccountNumber",
+        "CardNumber",
+        "CardholderName",
+        "ExpiryDate",
+        "SecurityCode",
+        "Signature",
+        "Pin",
+        "MemorableWord",
+        "LoanAmount",
+        "ExpStatus",
+        "ExpDecisioncode",
+        "ApplicationName",
+        "ExpapplicationStatus",
+        "ExpapplicationSubStatus",
+        "ExpcutomerProgress",
+        "ExpapprovalStage",
+        "ExpapplicationStatusSigned",
+        "ExpapplicationSubStatusSigned"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/VanquisLoanApplication/ChangeURL.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "URL&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/Salesforce/LoginToSalesforce.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "SalesforceUserID",
+        "SalesforcePWD",
+        "SalesforceURL"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/Salesforce/VerifyTheLoanApplication-after eSign.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "count&Sequence_1",
+        "applicationSubStatus&Sequence_1",
+        "applicationStatus&Sequence_1",
+        "financialAccount&Sequence_1",
+        "statusBar&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "ExpapplicationStatusSigned",
+        "ExpapplicationSubStatusSigned"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/Salesforce/VerifyTheLoanApplication.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DecisionExpiryDate&Sequence_3",
+        "approvalStage&Sequence_1",
+        "decisioncode&Sequence_1",
+        "status&Sequence_1",
+        "applicationStatus&Sequence_1",
+        "applicationSubStatus&Sequence_1",
+        "customerProgress&Sequence_1",
+        "ownerName&Sequence_1",
+        "financialAccount&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Sl_No",
+        "Months",
+        "LoanPurpose",
+        "Title",
+        "FirstName",
+        "LastName",
+        "DOB",
+        "EmailID",
+        "MobileNo",
+        "HouseNumber",
+        "BuildingNumber",
+        "Street",
+        "Town",
+        "PostCode",
+        "MoveIn",
+        "LivingSituation",
+        "Rent",
+        "MaritialStatus",
+        "AdultsLiving",
+        "EmployementDetails",
+        "MonthlyIncome",
+        "MonthlyPayment",
+        "NameOnBank",
+        "SortCode",
+        "AccountNumber",
+        "CardNumber",
+        "CardholderName",
+        "ExpiryDate",
+        "SecurityCode",
+        "Signature",
+        "Pin",
+        "MemorableWord",
+        "LoanAmount",
+        "ExpapplicationStatusSigned",
+        "ExpapplicationSubStatusSigned",
+        "EmailPassword",
+        "CustomerReference",
+        "ExpapprovalStage",
+        "ExpcutomerProgress",
+        "ExpapplicationSubStatus",
+        "ExpapplicationStatus",
+        "BorrowingAmount",
+        "ApplicationName",
+        "ExpDecisioncode",
+        "ExpStatus"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/API/ApplyLoanAPI.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "APIRequest&Sequence_1",
+        "StatusCode&Sequence_1",
+        "APIResponse&Sequence_1",
+        "GenerateRefNumber&Sequence_1",
+        "LoanAPIResponseJson&Sequence_3",
+        "CorrelationId&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Config",
+        "BrokerEApiURL",
+        "ApplicationReferenceNumber",
+        "Country",
+        "TotalCreditCommitments",
+        "TotalMonthlyOtherOutgoings",
+        "TotalMonthlyHousingCosts",
+        "DeclaredNetMonthlyIncome",
+        "EmpEndDate",
+        "EmpStartDate",
+        "Industry",
+        "Occupation",
+        "EmployerName",
+        "AccountOpenedDate",
+        "AccountName",
+        "SortCode",
+        "AccountNumber",
+        "StartDate",
+        "StreetAddress",
+        "HouseNumber",
+        "PostTown",
+        "PostalCode",
+        "County",
+        "CountryCode",
+        "PreEndDate",
+        "PreStartDate",
+        "PreHouseName",
+        "PreStreetAddress",
+        "PreHouseNumber",
+        "PrePostTown",
+        "PrePostalCode",
+        "PreCountry",
+        "PrecountryCode",
+        "EmailAddress",
+        "MobilePhoneNumber",
+        "NumberOfDependents",
+        "EmploymentStatus",
+        "ResidentialStatus",
+        "MaritalStatus",
+        "Gender",
+        "DateOfBirth",
+        "Surname",
+        "Forename",
+        "Title",
+        "Brand",
+        "ProductRequested",
+        "TermRequested",
+        "AmountRequested",
+        "LoanPurpose",
+        "CampaignID",
+        "ClientSecret",
+        "APIUrl",
+        "ClientId"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/VanquisLoanApplication/ApplyLoanThroughEApiUrl.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "OTP&Sequence_1",
+        "EmailCount&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Config",
+        "EmailPassword",
+        "MobileNumber",
+        "EmailId",
+        "BrokerEApiUrl"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Config/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/Salesforce/SalesforceClonedLoanApplication.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ApplicationStatus1&Sequence_1",
+        "applicationSubStatus&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "ExpapplicationSubStatusSigned",
+        "ExpapplicationStatusSigned",
+        "ApplicationRef",
+        "ExpApplicationStatus"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReusableComponents/Salesforce/SalesforceAPI.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ApplicationStatus&Sequence_1",
+        "MonthyAccomodation&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "ExpApplicationStatus",
+        "ApplicationRef",
+        "ExpMonthlyAccomodation"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

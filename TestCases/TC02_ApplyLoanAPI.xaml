@@ -69,7 +69,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>597,795</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>638,995</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TC02_ApplyLoanAPI_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -371,18 +371,10 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Salesforce cloned loan application - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ReusableComponents\Salesforce\SalesforceClonedLoanApplication.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="ApplicationRef">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ApplicationReferenceNumber" />
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="ExpApplicationStatus">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpApplicationStatus" />
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationStatusSigned">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpapplicationStatusSigned" />
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationSubStatusSigned">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpapplicationSubStatusSigned" />
-          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ApplicationRef">[ApplicationReferenceNumber]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpApplicationStatus">[ExpApplicationStatus]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationStatusSigned">[ExpapplicationStatusSigned]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationSubStatusSigned">[ExpapplicationSubStatusSigned]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
