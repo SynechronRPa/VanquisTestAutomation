@@ -3,8 +3,10 @@
   "description": "Vanquis bank test automation POC",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Database.Activities": "[1.7.1]",
     "UiPath.Excel.Activities": "2.20.2",
     "UiPath.Mail.Activities": "1.20.2",
+    "UiPath.MobileAutomation.Activities": "23.4.2",
     "UiPath.OCR.Activities": "3.15.1",
     "UiPath.System.Activities": "23.4.3",
     "UiPath.Testing.Activities": "23.4.1",
@@ -15,7 +17,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.4.2.0",
-  "projectVersion": "1.0.6",
+  "projectVersion": "1.0.8",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -60,6 +62,14 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "TestCases\\TC02_ApplyLoanAPI.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "12015850-047d-48ce-920f-1d6fc4644e6a",
+        "dataVariationFilePath": ".variations\\TC03_MobleApp_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC03_MobileAppTest.xaml"
       }
     ],
     "modernBehavior": false
