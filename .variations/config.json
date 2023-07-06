@@ -5,10 +5,6 @@
       "dataVariationType": "File"
     },
     {
-      "filePath": ".variations\\TC02_VanquisLoanAPI_Sheet1.json",
-      "dataVariationType": "File"
-    },
-    {
       "filePath": ".variations\\TC03_MobleApp_Sheet1.json",
       "dataVariationType": "File"
     }

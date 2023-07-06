@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>682,1975</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>682,1855</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ApplyLoanThroughEApiUrl_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -83,7 +83,6 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="ApplyLoanThroughEApiUrl" sap:VirtualizedContainerService.HintSize="692,1790" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -109,7 +108,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="[&quot;Validate the header text should be change from 'Congratulations'.&quot; + Environment.NewLine+&#xD;&#xA;&quot;Your loan is approved in principle, subject to final checks&quot;]" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,217" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+            <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="[&quot;Validate the header text should be change from 'Congratulations'.&quot; + Environment.NewLine+&#xA;&quot;Your loan is approved in principle, subject to final checks&quot;]" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,217" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
               <uta:VerifyControlAttribute.ActivityToTest>
                 <ActivityAction>
                   <ui:UiElementExists DisplayName="Element Exists 'DIV'" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
@@ -164,7 +163,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:SetFocus>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="EmailCount" CacheStrategy="None" DisplayName="Get Asset - Email Count" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="EmailCount" CacheStrategy="None" DisplayName="Get Asset - Email Count" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
               <ui:GetRobotAsset.Value>
                 <OutArgument x:TypeArguments="x:String">[EmailCount]</OutArgument>
               </ui:GetRobotAsset.Value>
@@ -191,7 +190,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:SetAsset>
-            <uta:VerifyExpression KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Validate the below detais - A few simple steps to complete your application&#xD;&#xA;- Confirm your details and loan offer&#xD;&#xA;- Set up your repayments&#xD;&#xA;- Check documents &amp; sign your agreement" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="True" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+            <uta:VerifyExpression KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Validate the below detais - A few simple steps to complete your application&#xA;- Confirm your details and loan offer&#xA;- Set up your repayments&#xA;- Check documents &amp; sign your agreement" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="True" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -278,21 +277,11 @@
             </ui:UiElementExists>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableComponents\GetOTPFromEmail.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ReusableComponents\Email\GetOTPFromEmail.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <OutArgument x:TypeArguments="x:String" x:Key="OTP">
-                  <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="OTP" />
-                </OutArgument>
-                <InArgument x:TypeArguments="x:Int32" x:Key="Port">
-                  <mva:VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="convert.ToInt32(Config(&quot;GmailPort&quot;).ToString)" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="MailServer">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;GmailServer&quot;).ToString" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="EmailAddress">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmailId" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="EmailPassword">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmailPassword" />
-                </InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="OTP">[OTP]</OutArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="Port">[convert.ToInt32(Config("GmailPort").ToString)]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="MailServer">[Config("GmailServer").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="EmailAddress">[EmailId]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="EmailPassword">[EmailPassword]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">

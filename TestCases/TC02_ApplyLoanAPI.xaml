@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TC02_ApplyLoanAPI" this:TC02_ApplyLoanAPI.LoanAmount="1500" this:TC02_ApplyLoanAPI.Months="24" this:TC02_ApplyLoanAPI.FirstName="Auto" this:TC02_ApplyLoanAPI.LastName="Test" this:TC02_ApplyLoanAPI.DOB="1999-01-01" this:TC02_ApplyLoanAPI.MobileNo="07700900000" this:TC02_ApplyLoanAPI.Street="Main" this:TC02_ApplyLoanAPI.Town="York" this:TC02_ApplyLoanAPI.PostCode="BD1 1RG" this:TC02_ApplyLoanAPI.LivingSituation="Homeowner" this:TC02_ApplyLoanAPI.MaritialStatus="Single" this:TC02_ApplyLoanAPI.AdultsLiving="0" this:TC02_ApplyLoanAPI.EmployementDetails="Full-time" this:TC02_ApplyLoanAPI.MonthlyIncome="10000" this:TC02_ApplyLoanAPI.MonthlyHousingCost="600.50" this:TC02_ApplyLoanAPI.MonthlyOutgoingCost="800" this:TC02_ApplyLoanAPI.CreditCommitments="600" this:TC02_ApplyLoanAPI.NameOnBank="Vanquis Bank" this:TC02_ApplyLoanAPI.PreStreet="Godwin Street" this:TC02_ApplyLoanAPI.PreTown="York" this:TC02_ApplyLoanAPI.PrePostCode="LS28 9NU" this:TC02_ApplyLoanAPI.APIEmailId="john@smithtest.com" this:TC02_ApplyLoanAPI.ExpPreApplicationStatus="Pre-application" this:TC02_ApplyLoanAPI.ExpApplicationStatus="In Progress" this:TC02_ApplyLoanAPI.Sl_No="1" this:TC02_ApplyLoanAPI.CampaignID="017831-id" this:TC02_ApplyLoanAPI.LoanPurpose="Holiday" this:TC02_ApplyLoanAPI.productRequested="Personal Loan" this:TC02_ApplyLoanAPI.Title="Mr" this:TC02_ApplyLoanAPI.Gender="Male" this:TC02_ApplyLoanAPI.EmailID="manigsmca11@gmail.com" this:TC02_ApplyLoanAPI.EmailPassword="tpypgkjlrnvufuvr" this:TC02_ApplyLoanAPI.HouseNumber="1087" this:TC02_ApplyLoanAPI.BuildingNumber="Test" this:TC02_ApplyLoanAPI.StartDate="2000-01-02" this:TC02_ApplyLoanAPI.CountryCode="GBR" this:TC02_ApplyLoanAPI.Country="West Yorkshire" this:TC02_ApplyLoanAPI.Rent="100" this:TC02_ApplyLoanAPI.MonthlyPayment="1st" this:TC02_ApplyLoanAPI.AccountName="Current" this:TC02_ApplyLoanAPI.SortCode="070116" this:TC02_ApplyLoanAPI.AccountNumber="00003036" this:TC02_ApplyLoanAPI.accountOpenedDate="2012-01-01" this:TC02_ApplyLoanAPI.CardNumber="4444333322221111 " this:TC02_ApplyLoanAPI.CardholderName="AUTHORISED" this:TC02_ApplyLoanAPI.ExpiryDate="0724" this:TC02_ApplyLoanAPI.SecurityCode="121" this:TC02_ApplyLoanAPI.Signature="Vanq" this:TC02_ApplyLoanAPI.Pin="123456" this:TC02_ApplyLoanAPI.MemorableWord="Vanq" this:TC02_ApplyLoanAPI.ExpStatus="Accept" this:TC02_ApplyLoanAPI.ExpDecisioncode="A_IF999" this:TC02_ApplyLoanAPI.EmployerName="Intraco" this:TC02_ApplyLoanAPI.Occupation="Management" this:TC02_ApplyLoanAPI.Industry="Health" this:TC02_ApplyLoanAPI.EmpStartDate="2015-10-01" this:TC02_ApplyLoanAPI.EmpEndDate="2021-10-01" this:TC02_ApplyLoanAPI.PreHouseNumber="1" this:TC02_ApplyLoanAPI.PreStartDate="1999-01-01" this:TC02_ApplyLoanAPI.PreCountryCode="GBR" this:TC02_ApplyLoanAPI.PreCountry="Yorkshire" this:TC02_ApplyLoanAPI.PreEndDate="2000-01-01" this:TC02_ApplyLoanAPI.PreHouseName="Palace" this:TC02_ApplyLoanAPI.ExpapplicationStatusSigned="Closed" this:TC02_ApplyLoanAPI.ExpapplicationSubStatusSigned="Cloned – email address changed" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TC02_ApplyLoanAPI" this:TC02_ApplyLoanAPI.LoanAmount="1500" this:TC02_ApplyLoanAPI.Months="24" this:TC02_ApplyLoanAPI.FirstName="Auto" this:TC02_ApplyLoanAPI.LastName="Test" this:TC02_ApplyLoanAPI.DOB="1999-01-01" this:TC02_ApplyLoanAPI.MobileNo="07700900000" this:TC02_ApplyLoanAPI.Street="Main" this:TC02_ApplyLoanAPI.Town="York" this:TC02_ApplyLoanAPI.PostCode="BD1 1RG" this:TC02_ApplyLoanAPI.LivingSituation="Homeowner" this:TC02_ApplyLoanAPI.MaritialStatus="Single" this:TC02_ApplyLoanAPI.AdultsLiving="0" this:TC02_ApplyLoanAPI.EmployementDetails="Full-time" this:TC02_ApplyLoanAPI.MonthlyIncome="10000" this:TC02_ApplyLoanAPI.MonthlyHousingCost="600.50" this:TC02_ApplyLoanAPI.MonthlyOutgoingCost="800" this:TC02_ApplyLoanAPI.CreditCommitments="600" this:TC02_ApplyLoanAPI.NameOnBank="Vanquis Bank" this:TC02_ApplyLoanAPI.PreStreet="Godwin Street" this:TC02_ApplyLoanAPI.PreTown="York" this:TC02_ApplyLoanAPI.PrePostCode="LS28 9NU" this:TC02_ApplyLoanAPI.APIEmailId="john@smithtest.com" this:TC02_ApplyLoanAPI.ExpPreApplicationStatus="Pre-application" this:TC02_ApplyLoanAPI.ExpApplicationStatus="In Progress" this:TC02_ApplyLoanAPI.Sl_No="1" this:TC02_ApplyLoanAPI.CampaignID="017831-id" this:TC02_ApplyLoanAPI.LoanPurpose="Holiday" this:TC02_ApplyLoanAPI.productRequested="Personal Loan" this:TC02_ApplyLoanAPI.Title="Mr" this:TC02_ApplyLoanAPI.Gender="Male" this:TC02_ApplyLoanAPI.EmailID="manigsmca11@gmail.com" this:TC02_ApplyLoanAPI.EmailPassword="tpypgkjlrnvufuvr" this:TC02_ApplyLoanAPI.HouseNumber="1087" this:TC02_ApplyLoanAPI.BuildingNumber="Test" this:TC02_ApplyLoanAPI.StartDate="2000-01-02" this:TC02_ApplyLoanAPI.CountryCode="GBR" this:TC02_ApplyLoanAPI.Country="West Yorkshire" this:TC02_ApplyLoanAPI.Rent="100" this:TC02_ApplyLoanAPI.MonthlyPayment="1st" this:TC02_ApplyLoanAPI.AccountName="Current" this:TC02_ApplyLoanAPI.SortCode="070116" this:TC02_ApplyLoanAPI.AccountNumber="00003036" this:TC02_ApplyLoanAPI.accountOpenedDate="2012-01-01" this:TC02_ApplyLoanAPI.CardNumber="4444333322221111 " this:TC02_ApplyLoanAPI.CardholderName="AUTHORISED" this:TC02_ApplyLoanAPI.ExpiryDate="0724" this:TC02_ApplyLoanAPI.SecurityCode="121" this:TC02_ApplyLoanAPI.Signature="Vanq" this:TC02_ApplyLoanAPI.Pin="123456" this:TC02_ApplyLoanAPI.MemorableWord="Vanq" this:TC02_ApplyLoanAPI.ExpStatus="Accept" this:TC02_ApplyLoanAPI.ExpDecisioncode="A_IF999" this:TC02_ApplyLoanAPI.EmployerName="Intraco" this:TC02_ApplyLoanAPI.Occupation="Management" this:TC02_ApplyLoanAPI.Industry="Health" this:TC02_ApplyLoanAPI.EmpStartDate="2015-10-01" this:TC02_ApplyLoanAPI.EmpEndDate="2021-10-01" this:TC02_ApplyLoanAPI.PreHouseNumber="1" this:TC02_ApplyLoanAPI.PreStartDate="1999-01-01" this:TC02_ApplyLoanAPI.PreCountryCode="GBR" this:TC02_ApplyLoanAPI.PreCountry="Yorkshire" this:TC02_ApplyLoanAPI.PreEndDate="2000-01-01" this:TC02_ApplyLoanAPI.PreHouseName="Palace" this:TC02_ApplyLoanAPI.ExpapplicationStatusSigned="Closed" this:TC02_ApplyLoanAPI.ExpapplicationSubStatusSigned="Cloned – email address changed" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="LoanAmount" Type="InArgument(x:String)" />
     <x:Property Name="Months" Type="InArgument(x:String)" />
@@ -69,7 +69,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>638,995</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>638,1108</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TC02_ApplyLoanAPI_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -138,18 +138,19 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TC02_ApplyLoanAPI" sap:VirtualizedContainerService.HintSize="512,730" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TC02_ApplyLoanAPI" sap:VirtualizedContainerService.HintSize="512,883" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
       <Variable x:TypeArguments="x:String" Name="ApplicationReferenceNumber" />
       <Variable x:TypeArguments="x:String" Name="BrokerEApiURL" />
+      <Variable x:TypeArguments="sd:DataRow" Name="TestDataRow" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,377" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,530" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -159,6 +160,16 @@
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Config\Config.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Config\Config.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[Config]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Read tsest data from DB - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="ReusableComponents\DataBase\ReadDataFromDB.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="sd:DataRow" x:Key="TestDataRow">
+            <mva:VisualBasicReference x:TypeArguments="sd:DataRow" ExpressionText="TestDataRow" />
+          </OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ConnectionString">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;DBConnectionString&quot;).ToString" />
+          </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Apply Loan API - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ReusableComponents\API\ApplyLoanAPI.xaml">
@@ -173,145 +184,145 @@
             <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;ClientSecret&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="CampaignID">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CampaignID" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;CampaignID&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="LoanPurpose">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanPurpose" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;LoanPurpose&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="AmountRequested">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanAmount" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;LoanAmount&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="TermRequested">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Months" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;Months&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="ProductRequested">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="productRequested" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;productRequested&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="Brand">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="NameOnBank" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;NameOnBank&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="Title">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Title" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;Title&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="Forename">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="FirstName" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;FirstName&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="Surname">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LastName" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;LastName&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="DateOfBirth">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="DOB" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;DOB&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="Gender">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Gender" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;Gender&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="MaritalStatus">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="MaritialStatus" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;MaritialStatus&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="ResidentialStatus">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LivingSituation" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;LivingSituation&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="EmploymentStatus">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmployementDetails" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;EmployementDetails&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="NumberOfDependents">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="AdultsLiving" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;AdultsLiving&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="MobilePhoneNumber">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="MobileNo" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;MobileNo&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="EmailAddress">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="APIEmailId" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;APIEmailId&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="PrecountryCode">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreCountryCode" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;PreCountryCode&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="PreCountry">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreCountry" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;PreCountry&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="PrePostalCode">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PrePostCode" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;PrePostCode&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="PrePostTown">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreTown" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;PreTown&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="PreHouseNumber">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreHouseNumber" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;PreHouseNumber&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="PreStreetAddress">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreStreet" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;PreStreet&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="PreHouseName">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreHouseName" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;PreHouseName&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="PreStartDate">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreStartDate" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;PreStartDate&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="PreEndDate">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PreEndDate" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;PreEndDate&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="CountryCode">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CountryCode" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;CountryCode&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="County">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Country" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;Country&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="PostalCode">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PostCode" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;PostCode&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="PostTown">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Town" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;Town&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="HouseNumber">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="HouseNumber" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;HouseNumber&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="StreetAddress">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Street" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;Street&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="StartDate">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="StartDate" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;StartDate&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="AccountNumber">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="AccountNumber" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;AccountNumber&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="SortCode">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="SortCode" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;SortCode&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="AccountName">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="AccountName" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;AccountName&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="AccountOpenedDate">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="accountOpenedDate" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;AccountOpenedDate&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="EmployerName">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmployerName" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;EmployerName&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="Occupation">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Occupation" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;Occupation&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="Industry">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Industry" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;Industry&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="EmpStartDate">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmpStartDate" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;EmpStartDate&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="EmpEndDate">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="EmpEndDate" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;EmpEndDate&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="DeclaredNetMonthlyIncome">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="MonthlyIncome" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;MonthlyIncome&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="TotalMonthlyHousingCosts">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="MonthlyHousingCost" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;MonthlyHousingCost&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="TotalMonthlyOtherOutgoings">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="MonthlyOutgoingCost" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;MonthlyOutgoingCost&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="TotalCreditCommitments">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CreditCommitments" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;CreditCommitments&quot;).ToString" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="Country">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Country" />
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;Country&quot;).ToString" />
           </InArgument>
           <OutArgument x:TypeArguments="x:String" x:Key="ApplicationReferenceNumber">
             <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="ApplicationReferenceNumber" />
@@ -334,9 +345,15 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login to salesfore - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="ReusableComponents\Salesforce\LoginToSalesforce.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="SalesforceURL">[Config("SalesforceUrl").ToString]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="SalesforcePWD">[Config("SalesforcePassword").ToString]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="SalesforceUserID">[Config("SalesforceUsername").ToString]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="SalesforceURL">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;SalesforceUrl&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="SalesforcePWD">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;SalesforcePassword&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="SalesforceUserID">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Config(&quot;SalesforceUsername&quot;).ToString" />
+          </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -345,21 +362,49 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Salesforce API - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="ReusableComponents\Salesforce\SalesforceAPI.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Salesforce API - Invoke" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="ReusableComponents\Salesforce\SalesforceAPI.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="ExpApplicationStatus">[ExpPreApplicationStatus]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="ApplicationRef">[ApplicationReferenceNumber]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="ExpMonthlyAccomodation">["GBP "+MonthlyHousingCost]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpApplicationStatus">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ExpPreApplicationStatus" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ApplicationRef">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ApplicationReferenceNumber" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpMonthlyAccomodation">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;GBP &quot;+TestDataRow(&quot;MonthlyHousingCost&quot;).ToString" />
+          </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Apply loan through EAPI Url - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\ApplyLoanThroughEApiUrl.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Apply loan through EAPI Url - Invoke" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="ReusableComponents\VanquisLoanApplication\ApplyLoanThroughEApiUrl.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="BrokerEApiUrl">[BrokerEApiURL]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="EmailId">[EmailID]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="MobileNumber">[MobileNo]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="EmailPassword">[EmailPassword]</InArgument>
-          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">[Config]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="BrokerEApiUrl">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="BrokerEApiURL" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmailId">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;EmailID&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="MobileNumber">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;MobileNo&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="EmailPassword">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;EmailPassword&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">
+            <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="Config" />
+          </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
     </Sequence>
     <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_4">
@@ -371,10 +416,18 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Salesforce cloned loan application - Invoke" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ReusableComponents\Salesforce\SalesforceClonedLoanApplication.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="ApplicationRef">[ApplicationReferenceNumber]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="ExpApplicationStatus">[ExpApplicationStatus]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationStatusSigned">[ExpapplicationStatusSigned]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationSubStatusSigned">[ExpapplicationSubStatusSigned]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ApplicationRef">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ApplicationReferenceNumber" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpApplicationStatus">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;ExpApplicationStatus&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationStatusSigned">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;ExpapplicationStatusSigned&quot;).ToString" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpapplicationSubStatusSigned">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestDataRow(&quot;ExpapplicationSubStatusSigned&quot;).ToString" />
+          </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>

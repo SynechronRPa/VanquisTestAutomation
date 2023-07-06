@@ -17,7 +17,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.4.2.0",
-  "projectVersion": "1.0.8",
+  "projectVersion": "1.0.142330268",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -58,7 +58,6 @@
       {
         "editingStatus": "Publishable",
         "testCaseId": "66e60b35-b656-4e63-b25a-f9178ca8948e",
-        "dataVariationFilePath": ".variations\\TC02_VanquisLoanAPI_Sheet1.json",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "TestCases\\TC02_ApplyLoanAPI.xaml"
